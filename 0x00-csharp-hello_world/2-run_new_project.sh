@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
 # Bash script that initializes, build and run a new C# project 
-dotnet new console -o 2-new_project. && cd 2-new_project && dotnet build && dotnet run && cd ..
+dotnet new console -o 2-new_project
+dotnet build 2-new_project 
+dotnet run --project 2-new_project/2-new_project.csproj
