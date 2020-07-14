@@ -7,10 +7,10 @@ class Program
         Random rndm = new Random();
         int number = rndm.Next(-10, 10);
         if (number > 0)
-            Console.WriteLine($"{number} is positive");
+            Console.WriteLine("{0} is positive", number);
         else if (number == 0)
-            Console.WriteLine($"{number} is zero");
+            Console.WriteLine("{0} is zero", number);
         else
-            Console.WriteLine($"{number} is negative");
+            Console.WriteLine("{0} is negative", number);
     }
 }
