@@ -7,9 +7,10 @@ namespace _5_print_comb
         static void Main(string[] args)
         {
             for(int i = 0; i <= 99; i++){
-                Console.Write("{0:d2}", i);
                 if (i != 99)
-                    Console.Write(", ");
+                    Console.Write("{0:d2}, ", i);
+                else
+                    Console.Write("{0:d2}\n", i);
             }
         }
     }
