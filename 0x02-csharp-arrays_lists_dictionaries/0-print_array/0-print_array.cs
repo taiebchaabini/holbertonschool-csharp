@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Text;
 class Array
 {
     public static int[] CreatePrint(int size)
@@ -14,7 +14,7 @@ class Array
         var output = new StringBuilder();
         for (int i = 0; i < size; i++)
         {
-            output.append(i);
+            output.Append(i);
             if (i != size - 1)
             {
                 output.Append(" ");
