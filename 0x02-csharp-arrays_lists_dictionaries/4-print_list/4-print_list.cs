@@ -9,13 +9,13 @@ class List
             Console.WriteLine("Size cannot be negative");
             return null;
         }
-        List<int> myList = new List<int>();
+        var myList = new List<int>();
         StringBuilder output = new StringBuilder();
         for (int i = 0; i < size; i++)
         {
             myList.Add(i);
             output.Append(i);
-            if (i != size)
+            if (i != size - 1)
                 output.Append(" ");
         }
         Console.WriteLine(output);
