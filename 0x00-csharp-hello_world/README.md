@@ -1,4 +1,4 @@
-# holbertonschool-csharp
+# 0x00-csharp-hello_world
 ## General
 - What is the meaning behind the name C#?
 - Who is the lead architect of the development team of C#?
