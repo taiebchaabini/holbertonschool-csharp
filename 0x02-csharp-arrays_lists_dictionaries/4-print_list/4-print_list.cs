@@ -10,7 +10,7 @@ class List
             return null;
         }
         List<int> myList = new List<int>();
-        var output = new StringBuilder();
+        StringBuilder output = new StringBuilder();
         for (int i = 0; i < size; i++)
         {
             myList.Add(i);
