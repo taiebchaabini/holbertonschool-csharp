@@ -8,7 +8,7 @@ class List
             Console.WriteLine("List is empty");
             return -1;
         }
-        int max = 0;
+        int max = myList[0];
         foreach (int element in myList){
             if (element > max){
                 max = element;
