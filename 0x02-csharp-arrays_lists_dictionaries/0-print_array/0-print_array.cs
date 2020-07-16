@@ -7,13 +7,14 @@ namespace _0_print_array
     {
         public static int[] CreatePrint(int size)
         {
+            
             if (size < 0)
             {
                 Console.WriteLine("Size cannot be negative");
                 return null;
             }
-
-            var arr = new int[size];
+            
+            int[] arr = new int[size];
             var output = new StringBuilder();
 
             for (int i = 0; i < size; i++)
