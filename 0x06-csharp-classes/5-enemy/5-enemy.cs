@@ -43,9 +43,9 @@ namespace Enemies
         {
             return health;
         }
-        /// <summary> override that prints the Zombie object’s attributes to stdout, Format: Zombie name: <name> / Total Health: <health> </summary>
+        /// <summary> Format: Zombie name: name / Total Health: health </summary>
         public override string ToString(){
-            return($"Zombie name: {Name} / Total Health: {GetHealth()}");
+            return($"Zombie name: {name} / Total Health: {health}");
         }
     }
 }
