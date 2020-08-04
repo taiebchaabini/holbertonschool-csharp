@@ -8,18 +8,11 @@ namespace Text
         /// <summary>Determines how many words are in a string</summary>
         /// <param name="s">String to check.</param>
         /// <returns>returns number of words in s.</returns>
-
         public static int CamelCase(string s){
             if (s == null){
                 return 0;
             }
             if (s.Length == 0){
-                return 0;
-            }
-            try{
-                s.Split(' ');
-            }
-            catch{
                 return 0;
             }
             string[] list = s.Split(' ');
@@ -35,7 +28,7 @@ namespace Text
             }
             foreach (var str in list){
                 try{
-                    if (Char.IsLetter(str[0]) && i > 0 && Char.IsUpper(str[0]))
+                    if (Char.IsLetter(str[0]) && i > 0 && Char.IsUpper(str[0]) && str.Length >= 2)
                         n += 1;
                 }
                 catch{

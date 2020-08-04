@@ -60,7 +60,15 @@ namespace Text.Tests
         }
         [Test]
         public void Test11(){
+            Assert.AreEqual(0, Text.Str.CamelCase(" Test"));
+        }
+        [Test]
+        public void Test12(){
             Assert.AreEqual(0, Text.Str.CamelCase("          Test"));
+        }
+        [Test]
+        public void Test13(){
+            Assert.AreEqual(2, Text.Str.CamelCase("Test m f Friend"));
         }
     }
 }
