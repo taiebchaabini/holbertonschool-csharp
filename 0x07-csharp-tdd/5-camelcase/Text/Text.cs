@@ -5,15 +5,21 @@ namespace Text
      /// <summary>Represents a Str class.</summary>
     public class Str
     {
-        /// <summary>Checks the index of the first non-repeating character of a string</summary>
+        /// <summary>Determines how many words are in a string</summary>
         /// <param name="s">String to check.</param>
-        /// <returns>returns the index of the first non-repeating character of a string.</returns>
+        /// <returns>returns number of words in s.</returns>
 
         public static int CamelCase(string s){
             if (s == null){
                 return 0;
             }
             if (s.Length == 0){
+                return 0;
+            }
+            try{
+                s.Split(' ');
+            }
+            catch{
                 return 0;
             }
             string[] list = s.Split(' ');
@@ -28,8 +34,13 @@ namespace Text
                 n += 1;
             }
             foreach (var str in list){
-                if (Char.IsLetter(str[0]) && i > 0 && Char.IsUpper(str[0]))
-                    n += 1;
+                try{
+                    if (Char.IsLetter(str[0]) && i > 0 && Char.IsUpper(str[0]))
+                        n += 1;
+                }
+                catch{
+                    continue;
+                }
                 i += 1;
             }
             return n;
