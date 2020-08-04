@@ -13,6 +13,9 @@ namespace Text
             if (s == null){
                 return 0;
             }
+            if (s.Length == 0){
+                return 0;
+            }
             string[] list = s.Split(' ');
             int i = 0;
             int n = 0;

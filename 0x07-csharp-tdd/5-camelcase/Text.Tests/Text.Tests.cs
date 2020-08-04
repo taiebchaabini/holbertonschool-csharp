@@ -42,5 +42,13 @@ namespace Text.Tests
         public void Test6(){
             Assert.AreEqual(1, Text.Str.CamelCase("123 Hi"));
         }
+        [Test]
+        public void Test7(){
+            Assert.AreEqual(0, Text.Str.CamelCase("123 123"));
+        }
+        [Test]
+        public void Test8(){
+            Assert.AreEqual(0, Text.Str.CamelCase(""));
+        }
     }
 }
