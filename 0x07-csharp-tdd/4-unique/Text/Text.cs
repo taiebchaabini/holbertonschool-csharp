@@ -19,10 +19,6 @@ namespace Text
             catch{
                 return -1;
             }
-            if (s[0] != s[1])
-            {
-                return 0;
-            }
             foreach (var elem in s)
             {
                 for (int i = 0; i < s.Length; i++){

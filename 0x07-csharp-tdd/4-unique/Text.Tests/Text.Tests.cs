@@ -40,6 +40,5 @@ namespace Text.Tests
         {
             Assert.AreEqual(-1, Text.Str.UniqueChar("llllllll"));
         }
-       
     }
 }
