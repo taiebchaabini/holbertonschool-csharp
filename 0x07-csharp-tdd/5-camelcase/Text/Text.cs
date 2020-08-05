@@ -24,15 +24,11 @@ namespace Text
             foreach (var str in list){
                 try
                 {
-                    if (Char.IsLetter(str[0]) && Char.IsUpper(str[0]))
-                    {
-
                         foreach (var ch in str)
                         {
                                 if (char.IsUpper(ch))
                                     n += 1;
                         }
-                    }
                 }
                 catch{
                     continue;

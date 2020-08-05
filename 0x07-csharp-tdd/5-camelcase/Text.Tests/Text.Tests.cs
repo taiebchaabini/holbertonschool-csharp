@@ -70,5 +70,9 @@ namespace Text.Tests
         public void Test13(){
             Assert.AreEqual(2, Text.Str.CamelCase("Test m f Friend"));
         }
+        [Test]
+        public void Test14(){
+            Assert.AreEqual(5, Text.Str.CamelCase("helloWorldIAmHere"));
+        }
     }
 }
