@@ -18,12 +18,10 @@ namespace Text
             string[] list = s.Split(' ');
             int i = 0;
             int n = 0;
-            if (list.Length == 1 && !Char.IsLetter(s[0]))
-                return 0;
             if (list.Length == 1){
                 return 1;
             }
-            if (list.Length > 1 && Char.IsLetter(s[0])){
+            if (list.Length > 1){
                 n += 1;
             }
             foreach (var str in list){

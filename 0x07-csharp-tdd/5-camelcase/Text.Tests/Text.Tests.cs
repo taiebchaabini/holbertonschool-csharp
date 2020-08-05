@@ -36,15 +36,15 @@ namespace Text.Tests
         }
         [Test]
         public void Test5(){
-            Assert.AreEqual(0, Text.Str.CamelCase("123"));
+            Assert.AreEqual(1, Text.Str.CamelCase("123"));
         }
         [Test]
         public void Test6(){
-            Assert.AreEqual(1, Text.Str.CamelCase("123 Hi"));
+            Assert.AreEqual(2, Text.Str.CamelCase("123 Hi"));
         }
         [Test]
         public void Test7(){
-            Assert.AreEqual(0, Text.Str.CamelCase("123 123"));
+            Assert.AreEqual(1, Text.Str.CamelCase("123 123"));
         }
         [Test]
         public void Test8(){
@@ -60,11 +60,11 @@ namespace Text.Tests
         }
         [Test]
         public void Test11(){
-            Assert.AreEqual(0, Text.Str.CamelCase(" Test"));
+            Assert.AreEqual(1, Text.Str.CamelCase(" Test"));
         }
         [Test]
         public void Test12(){
-            Assert.AreEqual(0, Text.Str.CamelCase("          Test"));
+            Assert.AreEqual(1, Text.Str.CamelCase("          Test"));
         }
         [Test]
         public void Test13(){
