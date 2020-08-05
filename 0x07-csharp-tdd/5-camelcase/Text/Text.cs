@@ -18,16 +18,21 @@ namespace Text
             string[] list = s.Split(' ');
             int i = 0;
             int n = 0;
-            if (list.Length == 1){
-                return 1;
-            }
-            if (list.Length > 1){
-                n += 1;
+            if (list.Length >= 1 && !Char.IsUpper(s[0]) && s[0] != ' '){
+                n = 1;
             }
             foreach (var str in list){
-                try{
-                    if (Char.IsLetter(str[0]) && i > 0 && Char.IsUpper(str[0]) && str.Length >= 2)
-                        n += 1;
+                try
+                {
+                    if (Char.IsLetter(str[0]) && Char.IsUpper(str[0]))
+                    {
+
+                        foreach (var ch in str)
+                        {
+                                if (char.IsUpper(ch))
+                                    n += 1;
+                        }
+                    }
                 }
                 catch{
                     continue;
