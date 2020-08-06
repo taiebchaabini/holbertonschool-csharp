@@ -10,20 +10,17 @@ class Obj
     /// </summary>
     /// <param name="myObj">Object from where to get informations.</param>
     public static void Print(object myObj){
-        TypeInfo t = myObj.GetType().GetTypeInfo();
-        IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
-        IEnumerable<MethodInfo> mList = t.DeclaredMethods;
-        Console.WriteLine("{0} Properties:", myObj.GetType().Name);
-        foreach (var p in pList)
+        string cType = myObj.GetType().Name;
+        Type t = myObj.GetType();
+        Console.WriteLine("{0} Properties:", cType);
+        foreach (var p in t.GetProperties())
         {
-            Console.Write(p.IsSpecialName + ": ");
             Console.WriteLine(p.Name);
         }
-        Console.WriteLine("{0} Methods:", myObj.GetType().Name);
-        foreach (var m in mList)
+        Console.WriteLine("{0} Methods:", cType);
+        foreach (var m in t.GetMethods())
         {
             Console.WriteLine(m.Name);
         }
-
     }
 }
