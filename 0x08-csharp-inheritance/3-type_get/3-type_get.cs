@@ -8,7 +8,7 @@ class Obj
     /// <summary>
     /// prints the names of the available properties and methods of an object.
     /// </summary>
-    /// <param name="myObj"></param>
+    /// <param name="myObj">Object from where to get informations.</param>
     public static void Print(object myObj){
         TypeInfo t = myObj.GetType().GetTypeInfo();
         IEnumerable<PropertyInfo> pList = t.DeclaredProperties;
