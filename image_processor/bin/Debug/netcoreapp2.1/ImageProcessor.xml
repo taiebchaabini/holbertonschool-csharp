@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ImageProcessor</name>
+    </assembly>
+    <members>
+        <member name="T:ImageProcessor">
+            <summary>
+            Creates an image processing that takes a list of images and creates new images from them based on the method
+            </summary>
+        </member>
+    </members>
+</doc>
