@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Drawing;
 using System.Threading.Tasks;
 using System.Drawing.Imaging;
@@ -18,9 +19,8 @@ class ImageProcessor
         for (int i = 0; i < filenames.Length; i++)
         {
             Bitmap image = new Bitmap(filenames[i]);
-            var fName = filenames[i].Replace("/", ".").Split(".");
-            var extension = "." + fName[fName.Length - 1];
-            var fileName = fName[fName.Length - 2];
+            var extension = Path.GetExtension(filenames[i]);
+            var fileName = Path.GetFileNameWithoutExtension(filenames[i]);
             fileName += "_inverse" + extension;
             Rectangle rect = new Rectangle(0, 0, image.Width, image.Height);
             System.Drawing.Imaging.BitmapData imageData =
