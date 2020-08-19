@@ -20,33 +20,24 @@ class ImageProcessor
             Bitmap image = new Bitmap(filenames[i]);
             var fileName = filenames[i].Replace("images/", "").Replace(".jpg", "_inverse.jpg");
 
-              // Lock the bitmap's bits.  
             Rectangle rect = new Rectangle(0, 0, image.Width, image.Height);
             System.Drawing.Imaging.BitmapData imageData =
             image.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadWrite,
             image.PixelFormat);
-            // Get the address of the first line.
+            
             IntPtr pointer = imageData.Scan0;
 
-            // Declare an array to hold the bytes of the bitmap.
             var bitmapBytes  = Math.Abs(imageData.Stride) * image.Height;
             var rgbValues = new byte[bitmapBytes];
 
-            // Copy the RGB values into the array.
             System.Runtime.InteropServices.Marshal.Copy(pointer, rgbValues, 0, bitmapBytes);
             
-            // Set every third value to 255. A 24bpp bitmap will look red.  
             for (int counter = 2; counter < rgbValues.Length; counter += 1){
-                var newColor = ~rgbValues[counter];
-                rgbValues[counter] = (byte)newColor;
+                rgbValues[counter] = (byte)~rgbValues[counter];
             }
 
 
-
-            // Copy the RGB values back to the bitmap
             System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, pointer, bitmapBytes);
-
-            // Unlock the bits.
             image.UnlockBits(imageData);
 
             /*
