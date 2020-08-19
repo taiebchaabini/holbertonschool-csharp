@@ -1,8 +1,9 @@
 ﻿using System;
 using System.IO;
 using System.Drawing;
-using System.Threading.Tasks;
 using System.Drawing.Imaging;
+using System.Threading;
+using System.Threading.Tasks;
 
 /// <summary>
 /// Creates an image processing that takes a list of images and creates new images from them based on the method
@@ -16,11 +17,12 @@ class ImageProcessor
     public static void Inverse(string[] filenames)
     {
 
-        for (int i = 0; i < filenames.Length; i++)
+        Parallel.ForEach(filenames, (myFile) =>
         {
-            Bitmap image = new Bitmap(filenames[i]);
-            var extension = Path.GetExtension(filenames[i]);
-            var fileName = Path.GetFileNameWithoutExtension(filenames[i]);
+            
+            Bitmap image = new Bitmap(myFile);
+            var extension = Path.GetExtension(myFile);
+            var fileName = Path.GetFileNameWithoutExtension(myFile);
             fileName += "_inverse" + extension;
             Rectangle rect = new Rectangle(0, 0, image.Width, image.Height);
             System.Drawing.Imaging.BitmapData imageData =
@@ -44,6 +46,6 @@ class ImageProcessor
             image.UnlockBits(imageData);
 
             image.Save($"{fileName}");
-        }
+        });
     }
 }
