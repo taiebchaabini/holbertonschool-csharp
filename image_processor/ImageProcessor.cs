@@ -18,8 +18,10 @@ class ImageProcessor
         Parallel.For(0, filenames.Length, delegate (int i)
         {
             Bitmap image = new Bitmap(filenames[i]);
-            var fileName = filenames[i].Replace("images/", "").Replace(".jpg", "_inverse.jpg");
-
+            var fName = filenames[i].Replace("/", ".").Split(".");
+            var extension = "." + fName[fName.Length - 1];
+            var fileName = fName[fName.Length - 2];
+            fileName += "_inverse" + extension; 
             Rectangle rect = new Rectangle(0, 0, image.Width, image.Height);
             System.Drawing.Imaging.BitmapData imageData =
             image.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadWrite,
@@ -40,20 +42,6 @@ class ImageProcessor
             System.Runtime.InteropServices.Marshal.Copy(rgbValues, 0, pointer, bitmapBytes);
             image.UnlockBits(imageData);
 
-            /*
-            for (int y = 0; (y <= (image.Height - 1)); y++)
-            {
-                for (int x = 0; (x <= (image.Width - 1)); x++)
-                {
-                    // Get current pixel
-                    Color invert = image.GetPixel(x, y);
-                    // Revert pixels
-                    invert = Color.FromArgb(255 - invert.A, 255 - invert.R, 255 - invert.G, 255 - invert.B);
-                    // Set reverted pixel
-                    image.SetPixel(x, y, invert);
-                }
-            }
-            */
             image.Save($"{fileName}");
 
 
