@@ -34,7 +34,7 @@ class ImageProcessor
 
             System.Runtime.InteropServices.Marshal.Copy(pointer, rgbValues, 0, bitmapBytes);
 
-            for (int counter = 2; counter < rgbValues.Length; counter += 1)
+            for (int counter = 0; counter < rgbValues.Length; counter += 1)
             {
                 rgbValues[counter] = (byte)~rgbValues[counter];
             }
