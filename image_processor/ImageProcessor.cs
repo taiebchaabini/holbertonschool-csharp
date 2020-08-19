@@ -36,7 +36,7 @@ class ImageProcessor
 
             for (int counter = 0; counter < rgbValues.Length; counter += 1)
             {
-                rgbValues[counter] = (byte)(255 - rgbValues[counter]);
+                rgbValues[counter] = (byte)~rgbValues[counter];
             }
 
 
