@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Drawing;
-using System.Threading.Tasks; 
+using System.Threading.Tasks;
 using System.Drawing.Imaging;
 
 /// <summary>
@@ -15,26 +15,27 @@ class ImageProcessor
     public static void Inverse(string[] filenames)
     {
 
-        Parallel.For(0, filenames.Length, delegate (int i)
+        for (int i = 0; i < filenames.Length; i++)
         {
             Bitmap image = new Bitmap(filenames[i]);
             var fName = filenames[i].Replace("/", ".").Split(".");
             var extension = "." + fName[fName.Length - 1];
             var fileName = fName[fName.Length - 2];
-            fileName += "_inverse" + extension; 
+            fileName += "_inverse" + extension;
             Rectangle rect = new Rectangle(0, 0, image.Width, image.Height);
             System.Drawing.Imaging.BitmapData imageData =
             image.LockBits(rect, System.Drawing.Imaging.ImageLockMode.ReadWrite,
             image.PixelFormat);
-            
+
             IntPtr pointer = imageData.Scan0;
 
-            var bitmapBytes  = Math.Abs(imageData.Stride) * image.Height;
+            var bitmapBytes = Math.Abs(imageData.Stride) * image.Height;
             var rgbValues = new byte[bitmapBytes];
 
             System.Runtime.InteropServices.Marshal.Copy(pointer, rgbValues, 0, bitmapBytes);
-            
-            for (int counter = 2; counter < rgbValues.Length; counter += 1){
+
+            for (int counter = 2; counter < rgbValues.Length; counter += 1)
+            {
                 rgbValues[counter] = (byte)~rgbValues[counter];
             }
 
@@ -43,8 +44,6 @@ class ImageProcessor
             image.UnlockBits(imageData);
 
             image.Save($"{fileName}");
-
-
-        });
+        }
     }
 }
