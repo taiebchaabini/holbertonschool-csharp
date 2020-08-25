@@ -15,7 +15,7 @@ class VectorMath
         if (vector.Length != vector.Length){
                 return (new Double[1]{-1});
         }
-        var sum = new Double[3];
+        var sum = new Double[vector.Length];
         for (int i = 0; i < vector.Length; i++){
             sum[i] = vector[i] * scalar;
         }
