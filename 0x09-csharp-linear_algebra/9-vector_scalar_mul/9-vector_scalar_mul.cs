@@ -12,7 +12,7 @@ class VectorMath
     /// <param name="scalar">Number of multiplication</param>
     /// <returns>returns the resulting vector after multiplication.</returns>
     public static double[] Multiply(double[] vector, double scalar){
-        if (vector.Length != 3 || vector.Length != 2){
+        if (vector.Length != 3 && vector.Length != 2){
                 return (new Double[1]{-1});
         }
         var sum = new Double[vector.Length];
