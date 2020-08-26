@@ -15,7 +15,7 @@ class VectorMath
         if (vector1.Length != vector2.Length ||
             vector1.Length != 3 && vector1.Length != 2 || 
             vector2.Length != 3 && vector2.Length != 2){
-                return (new Double[1]{-1});
+                return (-1);
         }
         double sum = 0;
         for (int x = 0; x < vector1.Length; x++){

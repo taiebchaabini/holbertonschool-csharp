@@ -1,0 +1,12 @@
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\obj\Debug\netcoreapp2.1\12-dot_product.csprojAssemblyReference.cache
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\obj\Debug\netcoreapp2.1\12-dot_product.csproj.CoreCompileInputs.cache
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\obj\Debug\netcoreapp2.1\12-dot_product.AssemblyInfoInputs.cache
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\obj\Debug\netcoreapp2.1\12-dot_product.AssemblyInfo.cs
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\bin\Debug\netcoreapp2.1\12-dot_product.xml
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\bin\Debug\netcoreapp2.1\12-dot_product.deps.json
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\bin\Debug\netcoreapp2.1\12-dot_product.runtimeconfig.json
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\bin\Debug\netcoreapp2.1\12-dot_product.runtimeconfig.dev.json
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\bin\Debug\netcoreapp2.1\12-dot_product.dll
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\bin\Debug\netcoreapp2.1\12-dot_product.pdb
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\obj\Debug\netcoreapp2.1\12-dot_product.dll
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\12-dot_product\obj\Debug\netcoreapp2.1\12-dot_product.pdb
