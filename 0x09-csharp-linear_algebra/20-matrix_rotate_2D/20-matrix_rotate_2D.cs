@@ -41,7 +41,7 @@ class MatrixMath
         double cosAngle = System.Math.Cos(radians);
         double sinAngle = System.Math.Sin(radians);
         var rotation = new Double[2,2]{{cosAngle, -sinAngle}, {sinAngle, cosAngle}};
-        var res = new Double[2,2];
+        var res = new Double[matrix.GetLength(0),matrix.GetLength(1)];
         res = Multiply(matrix, rotation);
         return res;
     }
