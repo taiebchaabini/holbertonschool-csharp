@@ -37,6 +37,11 @@ class MatrixMath
     /// <param name="angle">New angle</param>
     /// <returns>returns the resulting matrix.</returns>
     public static double[,] Rotate2D(double[,] matrix, double angle){
+        if (matrix.Length <= 1 ||
+            matrix.GetLength(0) != matrix.GetLength(1)){
+            return (new Double[,]{{-1}});
+        }
+
         double cosAngle = System.Math.Cos(angle);
         double sinAngle = System.Math.Sin(angle);
         var rotation = new Double[2,2]{{cosAngle, -sinAngle}, {sinAngle, cosAngle}};
