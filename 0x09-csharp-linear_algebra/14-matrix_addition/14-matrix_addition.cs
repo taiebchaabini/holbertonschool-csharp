@@ -19,7 +19,7 @@ class MatrixMath
             matrix2.GetLength(1) != 3 && matrix2.GetLength(1) != 2){
                 return (new Double[,]{{-1,-1,-1},{-1,-1,-1},{-1,-1,-1}});
         }
-        double[,] result = new double[3,3];
+        double[,] result = new double[matrix1.GetLength(0),matrix1.GetLength(1)];
         for (int y = 0; y < matrix1.GetLength(0); y++){
             for (int x = 0; x < matrix1.GetLength(1); x++){
                 result[y, x] = matrix1[y,x] + matrix2[y,x];
