@@ -12,8 +12,7 @@ class MatrixMath
     /// <param name="scalar">Number for multiplication</param>
     /// <returns>New matrix after operation</returns>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar){
-        if (matrix.Length <= 1 ||
-            matrix.GetLength(0) != matrix2.GetLength(1)){
+        if (matrix.Length <= 1){
             return (new Double[,]{{-1}});
         }
         for (int y = 0; y < matrix.GetLength(0); y++){
