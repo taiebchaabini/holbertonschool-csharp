@@ -19,7 +19,7 @@ class MatrixMath
             matrix1.GetLength(0) == 3 && matrix1.GetLength(1) != 3 ||
             matrix2.GetLength(0) == 2 && matrix2.GetLength(1) != 2 || 
             matrix2.GetLength(0) == 3 && matrix2.GetLength(1) != 3){
-                return (new Double[,]{{-1,-1,-1},{-1,-1,-1},{-1,-1,-1}});
+                return (new Double[,]{{-1}});
         }
         double[,] result = new double[matrix1.GetLength(0),matrix1.GetLength(1)];
         for (int y = 0; y < matrix1.GetLength(0); y++){
