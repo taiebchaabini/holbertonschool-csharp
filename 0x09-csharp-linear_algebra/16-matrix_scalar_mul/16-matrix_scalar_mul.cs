@@ -13,9 +13,10 @@ class MatrixMath
     /// <returns>New matrix after operation</returns>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar){
         if (matrix.Length <= 1 ||
-            matrix.GetLength(0) != matrix.GetLength(1)){
+            matrix.GetLength(1) != matrix2.GetLength(0)){
             return (new Double[,]{{-1}});
         }
+        var res = new double[matrix.GetLength(0), matrix2.GetLength(1)];
         for (int y = 0; y < matrix.GetLength(0); y++){
             for (int x = 0; x < matrix.GetLength(1); x++){
                 matrix[y,x] *= scalar;
