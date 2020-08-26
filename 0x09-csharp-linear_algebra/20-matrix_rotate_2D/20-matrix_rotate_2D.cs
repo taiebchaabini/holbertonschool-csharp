@@ -16,19 +16,11 @@ class MatrixMath
             matrix.GetLength(0) != matrix.GetLength(1)){
             return (new Double[,]{{-1}});
         }
-
-        double cosAngle = System.Math.Cos(angle);
-        double sinAngle = System.Math.Sin(angle);
-        var rotation = new Double[2,2]{{cosAngle, -sinAngle}, {sinAngle, cosAngle}};
-        var res = new double[matrix.GetLength(0),matrix.GetLength(1)];
-        double sum = 0.0;
+        var res = new Double[matrix.GetLength(0),matrix.GetLength(1)];
+        double radians = (System.Math.PI / 180) * angle;
         for (int y = 0; y < matrix.GetLength(0); y++){
-            for (int x2 = 0; x2 < rotation.GetLength(1); x2++){
-                sum = 0;
-                for (int x = 0; x < matrix.GetLength(1); x++){
-                    sum += matrix[y,x] * rotation[x, x2];
-                }
-                res[y, x2] = sum;
+            for (int x = 0; x < matrix.GetLength(1); x++){
+                res[y, x] = matrix[y, x] * radians;
             }
         }
         return res;
