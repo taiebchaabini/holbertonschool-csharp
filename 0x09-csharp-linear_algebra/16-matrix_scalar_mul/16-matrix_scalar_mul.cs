@@ -13,7 +13,7 @@ class MatrixMath
     /// <returns>New matrix after operation</returns>
     public static double[,] MultiplyScalar(double[,] matrix, double scalar){
         if (matrix.Length <= 1 ||
-            matrix.GetLength(1) != matrix2.GetLength(0)){
+            matrix.GetLength(0) != matrix2.GetLength(1)){
             return (new Double[,]{{-1}});
         }
         var res = new double[matrix.GetLength(0), matrix2.GetLength(1)];
