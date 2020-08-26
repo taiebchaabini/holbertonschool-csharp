@@ -16,7 +16,6 @@ class MatrixMath
             matrix.GetLength(0) != matrix2.GetLength(1)){
             return (new Double[,]{{-1}});
         }
-        var res = new double[matrix.GetLength(0), matrix2.GetLength(1)];
         for (int y = 0; y < matrix.GetLength(0); y++){
             for (int x = 0; x < matrix.GetLength(1); x++){
                 matrix[y,x] *= scalar;
