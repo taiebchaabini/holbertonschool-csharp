@@ -23,8 +23,4 @@ class VectorMath
         }
         return sum;
     }
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello World!");
-    }
 }
