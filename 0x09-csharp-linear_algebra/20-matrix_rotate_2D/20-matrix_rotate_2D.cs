@@ -12,11 +12,6 @@ class MatrixMath
     /// <param name="matrix2">Matrix 2</param>
     /// <returns>returns the new matrix</returns>
     public static double[,] Multiply(double[,] matrix1, double[,] matrix2){
-        if (matrix1.Length == 0 ||
-            matrix2.Length == 0 ||
-            matrix1.GetLength(1) != matrix2.GetLength(0)){
-            return (new double[,]{{-1}});
-        }
         var res = new double[matrix1.GetLength(0),matrix2.GetLength(1)];
         double sum = 0.0;
         for (int y = 0; y < matrix1.GetLength(0); y++){
