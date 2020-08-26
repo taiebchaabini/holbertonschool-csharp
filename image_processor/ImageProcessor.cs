@@ -76,15 +76,7 @@ class ImageProcessor
 
             for (int counter = 0; counter < rgbValues.Length; counter += 3)
             {
-                var gray = (rgbValues[counter] + rgbValues[counter + 1] + rgbValues[counter + 2]) / 3;
-                rgbValues[counter] = (byte)gray;
-                if (counter + 1 < rgbValues.Length){
-                    rgbValues[counter + 1] = (byte)gray;
-                }
-                if (counter + 2 < rgbValues.Length){
-                    rgbValues[counter + 2] = (byte)gray;
-                }
-
+                rgbValues[counter] = (byte)((rgbValues[counter] + rgbValues[counter + 1] + rgbValues[counter + 2]) / 2);
             }
 
 

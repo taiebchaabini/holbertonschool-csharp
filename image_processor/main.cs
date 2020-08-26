@@ -11,6 +11,6 @@ class Program
             filenames = args;
         else
             filenames = Directory.GetFiles("images/", "*.jpg");
-        ImageProcessor.Inverse(filenames);
+        ImageProcessor.Grayscale(filenames);
     }
 }
