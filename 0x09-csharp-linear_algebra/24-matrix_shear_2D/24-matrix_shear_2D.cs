@@ -20,8 +20,7 @@ class MatrixMath
             for (int x2 = 0; x2 < matrix2.GetLength(1); x2++){
                 sum = 0;
                 for (int x = 0; x < matrix1.GetLength(1); x++){
-                    sum = Math.Round(sum + (matrix1[y,x] * matrix2[x, x2]), 2);
-                    Console.WriteLine(matrix1[y,x]);
+                    sum += matrix1[y,x] * matrix2[x, x2];
                 }
                 res[y, x2] = Math.Round(sum, 2);
             }
