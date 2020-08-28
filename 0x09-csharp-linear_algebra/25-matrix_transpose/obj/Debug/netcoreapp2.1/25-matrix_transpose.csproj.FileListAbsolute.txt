@@ -1,0 +1,12 @@
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\bin\Debug\netcoreapp2.1\25-matrix_transpose.xml
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\bin\Debug\netcoreapp2.1\25-matrix_transpose.deps.json
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\bin\Debug\netcoreapp2.1\25-matrix_transpose.runtimeconfig.json
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\bin\Debug\netcoreapp2.1\25-matrix_transpose.runtimeconfig.dev.json
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\bin\Debug\netcoreapp2.1\25-matrix_transpose.dll
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\bin\Debug\netcoreapp2.1\25-matrix_transpose.pdb
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\obj\Debug\netcoreapp2.1\25-matrix_transpose.csprojAssemblyReference.cache
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\obj\Debug\netcoreapp2.1\25-matrix_transpose.csproj.CoreCompileInputs.cache
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\obj\Debug\netcoreapp2.1\25-matrix_transpose.AssemblyInfoInputs.cache
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\obj\Debug\netcoreapp2.1\25-matrix_transpose.AssemblyInfo.cs
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\obj\Debug\netcoreapp2.1\25-matrix_transpose.dll
+C:\Users\Taieb\Documents\GitHub\holbertonschool-csharp\0x09-csharp-linear_algebra\25-matrix_transpose\obj\Debug\netcoreapp2.1\25-matrix_transpose.pdb
