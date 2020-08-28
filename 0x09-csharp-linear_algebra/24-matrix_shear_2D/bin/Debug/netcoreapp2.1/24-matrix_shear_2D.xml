@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>24-matrix_shear_2D</name>
+    </assembly>
+    <members>
+        <member name="M:MatrixMath.Multiply(System.Double[0:,0:],System.Double[0:,0:])">
+            <summary>
+            Method that multiplies two matrices and returns the resulting matrix.
+            </summary>
+            <param name="matrix1">Matrix 1</param>
+            <param name="matrix2">Matrix 2</param>
+            <returns>returns the new matrix</returns>
+        </member>
+        <member name="M:MatrixMath.Shear2D(System.Double[0:,0:],System.Char,System.Double)">
+            <summary>
+            Method that shears a square 2D matrix by a given shear factor.</summary>
+            <param name="matrix">Matrix to shear</param>
+            <param name="direction">Direction for shear (X or Y)</param>
+            <param name="factor">factor of shear</param>
+            <returns>Returns the resulting matrix.</returns>
+        </member>
+    </members>
+</doc>
