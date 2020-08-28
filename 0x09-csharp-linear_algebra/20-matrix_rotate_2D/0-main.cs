@@ -5,7 +5,7 @@ class Test
     static public void Main(String[] args)
     {
         double[,] m = { { 1, 2 }, { 3, 4 } };
-        var res = MatrixMath.Rotate2D(m, 1.57);
+        var res = MatrixMath.Rotate2D(m, 2);
         int i = 0;
         
         
