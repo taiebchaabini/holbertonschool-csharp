@@ -25,7 +25,7 @@ class MatrixMath
                 for (int x = 0; x < matrix1.GetLength(1); x++){
                     sum += matrix1[y,x] * matrix2[x, x2];
                 }
-                res[y, x2] = Math.Round(sum);
+                res[y, x2] = Math.Round(sum, 2);
             }
         }
         return res;  
@@ -37,8 +37,8 @@ class MatrixMath
     /// <param name="angle">New angle</param>
     /// <returns>returns the resulting matrix.</returns>
     public static double[,] Rotate2D(double[,] matrix, double angle){
-        double cosAngle = System.Math.Cos(angle);
-        double sinAngle = System.Math.Sin(angle);
+        double cosAngle = System.Math.Cos(-angle);
+        double sinAngle = System.Math.Sin(-angle);
         var rotation = new Double[2,2]{{cosAngle, -sinAngle}, {sinAngle, cosAngle}};
         var res = new Double[matrix.GetLength(0),matrix.GetLength(1)];
         res = Multiply(matrix, rotation);
