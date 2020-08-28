@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>28-determinant</name>
+    </assembly>
+    <members>
+        <member name="M:MatrixMath.Determinant2D(System.Double[0:,0:])">
+            <summary>
+            Method that calculates the determinant of a 2D matrix.
+            </summary>
+            <param name="matrix">2D or 3D matrix.</param>
+            <returns>returns the determinant of a matrix</returns>
+        </member>
+        <member name="M:MatrixMath.Determinant(System.Double[0:,0:])">
+            <summary>
+            Method that calculates the determinant of a matrix.
+            </summary>
+            <param name="matrix">2D or 3D matrix.</param>
+            <returns>returns the determinant of a matrix</returns>
+        </member>
+    </members>
+</doc>
