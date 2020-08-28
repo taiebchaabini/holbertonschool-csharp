@@ -8,7 +8,7 @@ class MatrixMath
     /// <param name="matrix">2D or 3D matrix.</param>
     /// <returns>returns the determinant of a matrix</returns>
     public static double Determinant2D(double[,] matrix){
-        return ((matrix[0,0] * matrix[1,1]) - (matrix[0,1] * matrix[1, 0]));
+        return (Math.Round((matrix[0,0] * matrix[1,1]) - (matrix[0,1] * matrix[1, 0]), 2));
     }
     /// <summary>
     /// Method that calculates the determinant of a matrix.
@@ -27,6 +27,6 @@ class MatrixMath
         var matrixB = new Double[,]{{matrix[1,0], matrix[1,2]},{matrix[2,0], matrix[2,2]}};
         var matrixC = new Double[,]{{matrix[1,0], matrix[1,1]},{matrix[2,0], matrix[2,1]}};
         var res = ((matrix[0,0] * Determinant2D(matrixA)) - (matrix[0,1] * Determinant2D(matrixB))) + matrix[0,2] * Determinant2D(matrixC);
-        return res;
+        return Math.Round(res, 2);
     }
 }
