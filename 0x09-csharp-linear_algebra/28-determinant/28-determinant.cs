@@ -16,7 +16,8 @@ class MatrixMath
     /// <param name="matrix">2D or 3D matrix.</param>
     /// <returns>returns the determinant of a matrix</returns>
     public static double Determinant(double[,] matrix){
-        if (matrix.GetLength(1) != matrix.GetLength(0)){
+        if (matrix.GetLength >= 3 || 
+            matrix.GetLength(1) != matrix.GetLength(0)){
             return (-1);
         }
         if (matrix.GetLength(1) == 2){
