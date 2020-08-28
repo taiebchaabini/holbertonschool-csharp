@@ -9,7 +9,7 @@ class MatrixMath
     /// <returns>Return the resulting matrix.</returns>
     public static double[,] Transpose(double[,] matrix)
     {
-        if (matrix.Length == 0){
+        if (matrix.Length <= 1){
             return (new double[,]{{}});
         }
         var newMatrix = new double[matrix.GetLength(1),matrix.GetLength(0)];
