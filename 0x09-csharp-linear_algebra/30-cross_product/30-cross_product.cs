@@ -13,7 +13,7 @@ class VectorMath
     /// <returns>Returns the resulting vector.</returns>
     public static double[] CrossProduct(double[] vector1, double[] vector2){
         if (vector1.Length != 3 || vector2.Length != 3){
-            return (-1);
+            return (new double[]{-1});
         }
         double x = Math.Round((vector1[1] * vector2[2]) - (vector1[2] * vector2[1]), 2);
         double y = Math.Round((vector1[0] * vector2[2]) - (vector1[2] * vector2[0]), 2);
