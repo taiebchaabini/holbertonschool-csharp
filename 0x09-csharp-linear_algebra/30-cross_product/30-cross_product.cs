@@ -1,5 +1,8 @@
 ﻿using System;
 
+/// <summary>
+/// VectorMath main class.
+/// </summary>
 class VectorMath
 {
     /// <summary>
