@@ -9,7 +9,7 @@ class MatrixMath
     /// <returns>returns the resulting matrix.</returns>
     public static double[,] Inverse2D(double[,] matrix){
         if (matrix.GetLength(1) != 2 || matrix.GetLength(0) != 2){
-            return new double[,]{-1};
+            return new double[,]{{-1}};
         }
         var res = new double[matrix.GetLength(0),matrix.GetLength(1)];
         double determinant = 0;
