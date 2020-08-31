@@ -21,7 +21,7 @@ class MatrixMath
         determinant = 1 / determinant; 
         for (int y = 0; y < res.GetLength(0); y++){
             for (int x = 0; x < res.GetLength(1); x++){
-                res[y,x] *= determinant;
+                res[y,x] *= Math.Round(determinant, 2);
             }
         }
         return res;
