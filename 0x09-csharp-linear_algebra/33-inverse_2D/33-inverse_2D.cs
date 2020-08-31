@@ -8,22 +8,20 @@ class MatrixMath
     /// <param name="matrix">Matrix</param>
     /// <returns>returns the resulting matrix.</returns>
     public static double[,] Inverse2D(double[,] matrix){
-        if (matrix.GetLength(1) != matrix.GetLength(0) ||
-            matrix.Length <= 1
-        ){
+        if (matrix.GetLength(1) != matrix.GetLength(0)){
             return new double[,]{{-1}};
         }
         var res = new double[matrix.GetLength(0),matrix.GetLength(1)];
         double determinant = 0;
+        determinant = (matrix[0,0] * matrix[1,1]) - (matrix[0,1] * matrix[1,0]);
         res[0,0] = matrix[1,1];
         res[0,1] = -matrix[0,1];
         res[1,0] = -matrix[1,0];
         res[1,1] = matrix[0,0];
-        determinant = (matrix[0,0] * matrix[1,1]) - (matrix[0,1] * matrix[1,0]);
         determinant = 1 / determinant; 
         for (int y = 0; y < res.GetLength(0); y++){
             for (int x = 0; x < res.GetLength(1); x++){
-                res[y,x] *= Math.Round(determinant, 2);
+                res[y,x] *= determinant;
             }
         }
         return res;
