@@ -20,6 +20,9 @@ class MatrixMath
         res[1,1] = matrix[0,0];
         determinant = 1 / determinant; 
         
+        if (determinant is int == false){
+            return new double[,]{{-1}};
+        }
         for (int y = 0; y < res.GetLength(0); y++){
             for (int x = 0; x < res.GetLength(1); x++){
                 res[y,x] = Math.Round(determinant * res[y,x], 2);

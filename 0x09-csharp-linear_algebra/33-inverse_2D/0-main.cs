@@ -4,7 +4,7 @@ class Test
 {
     static public void Main(String[] args)
     {
-        double[,] m = { { 7, -3 }, { 1, -6 } };
+        double[,] m = { { 3, -3 }, { 1, -1 } };
         var res = MatrixMath.Inverse2D(m);
         int i = 0;
         
