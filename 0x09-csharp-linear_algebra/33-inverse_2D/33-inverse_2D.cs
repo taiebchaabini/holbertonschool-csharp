@@ -20,7 +20,7 @@ class MatrixMath
         res[1,1] = matrix[0,0];
         determinant = 1 / determinant; 
         
-        if (determinant is int == false){
+        if (determinant == System.Double.PositiveInfinity || determinant == System.Double.NegativeInfinity){
             return new double[,]{{-1}};
         }
         for (int y = 0; y < res.GetLength(0); y++){
