@@ -1,4 +1,5 @@
-﻿/// <summary>
+﻿using System;
+/// <summary>
 /// Custom generic class Queue
 /// </summary>
 /// <typeparam name="T">Could be any type</typeparam>
