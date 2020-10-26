@@ -37,6 +37,7 @@ public class Queue<T>
         }
         else{
             tail.next = n;
+            tail = n;
         }
         this.count += 1;
     }
