@@ -10,29 +10,22 @@ public class Queue<T>
     /// </summary>
     /// <value>The first element in the Queue.</value>
     public Node head { get; set; }
-
-
     /// <summary>
     /// Used for getter and setter
     /// </summary>
     /// <value>The Last element in the Queue.</value>
     public Node tail { get; set; }
-    
     /// <summary>
     /// Number of queued elements.
     /// </summary>
     public int count;
-
-
     /// <summary>
     /// Checks the type of this generic class.
     /// </summary>
     /// <returns>Returns the type of the generic class.</returns>
     public String CheckType(){
-        return typeof(T).ToString();
+        return (typeof(T).ToString());
     }
-
-
     /// <summary>
     /// Creates a new Node and adds it to the end of the queue.
     /// </summary>
@@ -55,24 +48,20 @@ public class Queue<T>
     public T Dequeue(){
         if (head == null){
             Console.WriteLine("Queue is empty");
-            return default(T);
+            return (default(T));
         }
         T val = head.value;
         head = head.next;
         count -= 1;
         return (val);
     }
-
-
     /// <summary>
     /// Gets the count of nodes in the queue.
     /// </summary>
     /// <returns>Returns the number of queued elements.</returns>
     public int Count(){
-        return this.count;
+        return (this.count);
     }
-
-
     /// <summary>
     /// Node of the queue.
     /// </summary>
