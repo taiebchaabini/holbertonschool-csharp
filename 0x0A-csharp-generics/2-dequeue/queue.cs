@@ -60,7 +60,7 @@ public class Queue<T>
         T val = head.value;
         head = head.next;
         count -= 1;
-        return val;
+        return (val);
     }
 
 
