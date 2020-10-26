@@ -17,8 +17,11 @@ public class Queue<T>
     /// </summary>
     /// <value>The Last element in the Queue.</value>
     public Node tail { get; set; }
-    // Number of queued elements.
-    private int count;
+    
+    /// <summary>
+    /// Number of queued elements.
+    /// </summary>
+    public int count;
 
 
     /// <summary>
