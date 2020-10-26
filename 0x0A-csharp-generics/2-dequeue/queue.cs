@@ -57,10 +57,10 @@ public class Queue<T>
             Console.WriteLine("Queue is empty");
             return default(T);
         }
-        Node val = head;
+        T val = head.value;
         head = head.next;
         count -= 1;
-        return val.value;
+        return val;
     }
 
 
@@ -81,14 +81,14 @@ public class Queue<T>
         /// Node's value
         /// </summary>
         /// <value>Get or set the node's value</value>
-        public T value { get; set; }
+        public T value { get; set; } = default(T);
 
 
         /// <summary>
         /// Next node
         /// </summary>
         /// <value>Get or set the next node</value>
-        public Node next { get; set; }
+        public Node next { get; set; } = null;
 
 
         /// <summary>
