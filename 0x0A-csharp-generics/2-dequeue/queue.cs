@@ -50,7 +50,7 @@ public class Queue<T>
     /// </summary>
     /// <returns>Returns the value of removed element</returns>
     public T Dequeue(){
-        if (count == 0){
+        if (head == null){
             Console.WriteLine("Queue is empty");
             return default(T);
         }
