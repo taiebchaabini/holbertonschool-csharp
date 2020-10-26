@@ -88,7 +88,7 @@ public class Queue<T>
         /// Next node
         /// </summary>
         /// <value>Get or set the next node</value>
-        public Node next { get; set; }
+        public Node next { get; set; } = null;
 
 
         /// <summary>
