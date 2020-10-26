@@ -45,6 +45,10 @@ public class Queue<T>
         }
         this.count += 1;
     }
+    /// <summary>
+    /// Remove an element from the front of the queue
+    /// </summary>
+    /// <returns>Returns the value of removed element</returns>
     public T Dequeue(){
         if (head == null){
             Console.WriteLine("Queue is empty");
