@@ -35,6 +35,7 @@ public class Queue<T>
             head = n;
             tail = n;
             head.next = null;
+            tail.next = null;
         }
         else{
             tail.next = n;
