@@ -34,8 +34,6 @@ public class Queue<T>
         if (count == 0){
             head = n;
             tail = n;
-            head.next = null;
-            tail.next = null;
         }
         else{
             tail.next = n;
