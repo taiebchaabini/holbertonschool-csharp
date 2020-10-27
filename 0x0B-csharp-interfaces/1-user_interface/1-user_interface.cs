@@ -7,7 +7,7 @@ public abstract class Base{
     /// <summary>
     /// Name property
     /// </summary>
-    private string name {get; set;}
+    protected string name {get; set;}
     /// <summary>
     /// Overrides ToString Method
     /// </summary>
