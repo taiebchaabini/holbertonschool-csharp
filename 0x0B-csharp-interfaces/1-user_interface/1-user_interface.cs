@@ -56,12 +56,12 @@ interface ICollectable{
 /// <summary>
 /// Used for test purpose
 /// </summary>
-class TestObject : IInteractive, IBreakable, ICollectable{
+public class TestObject : IInteractive, IBreakable, ICollectable{
     /// <summary>
     /// Used for interaction
     /// </summary>
     public void Interact(){
-        // Method implementation.
+        
     }
     /// <summary>
     /// Used for item durability
