@@ -138,7 +138,7 @@ public class Key : Base, ICollectable{
     /// Used to check if collected or not.
     /// </summary>
     /// <value>Getter and setter</value>
-    bool isCollected { get; set; }
+    public bool isCollected { get; set; }
     /// <summary>
     /// Default constructor
     /// </summary>
