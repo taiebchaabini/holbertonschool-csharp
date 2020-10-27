@@ -3,7 +3,7 @@
 /// <summary>
 /// Base class
 /// </summary>
-abstract class Base{
+public abstract class Base{
     /// <summary>
     /// Name property
     /// </summary>
@@ -58,7 +58,7 @@ interface ICollectable{
 /// <summary>
 /// Used for test purpose
 /// </summary>
-class TestObject : Base, IInteractive, IBreakable, ICollectable{
+public class TestObject : Base, IInteractive, IBreakable, ICollectable{
     /// <summary>
     /// Used for interaction
     /// </summary>
