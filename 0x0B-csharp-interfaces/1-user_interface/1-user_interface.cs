@@ -72,7 +72,7 @@ class TestObject : IInteractive, IBreakable, ICollectable{
     /// Used to break item
     /// </summary>
     public void Break(){
-
+        // Method implementation.
     }
     /// <summary>
     /// Used for collection
@@ -83,6 +83,6 @@ class TestObject : IInteractive, IBreakable, ICollectable{
     /// Used to collect something
     /// </summary>
     public void Collect(){
-
+        // Method implementation.
     }
 } 
