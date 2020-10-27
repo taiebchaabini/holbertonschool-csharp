@@ -154,6 +154,7 @@ public class Key : Base, ICollectable{
     public void Collect(){
         if (!isCollected){
             Console.WriteLine($"You pick up the {name}.");
+            isCollected = true;
         } else{
             Console.WriteLine($"You have already picked up the {name}.");
         }
