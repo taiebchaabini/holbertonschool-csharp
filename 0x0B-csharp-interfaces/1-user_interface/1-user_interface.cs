@@ -59,6 +59,17 @@ public interface ICollectable{
 /// Used for test purpose
 /// </summary>
 public class TestObject : Base, IInteractive, IBreakable, ICollectable{
+
+    /// <summary>
+    /// Used for item durability
+    /// </summary>
+    /// <value>Getter and setter</value>
+    public int durability {get; set;}
+    /// <summary>
+    /// Used for collection
+    /// </summary>
+    /// <value></value>
+    public bool isCollected {get; set;}
     /// <summary>
     /// Used for interaction
     /// </summary>
@@ -66,21 +77,12 @@ public class TestObject : Base, IInteractive, IBreakable, ICollectable{
         // Method implementation.
     }
     /// <summary>
-    /// Used for item durability
-    /// </summary>
-    /// <value>Getter and setter</value>
-    public int durability {get; set;}
-    /// <summary>
     /// Used to break item
     /// </summary>
     public void Break(){
         // Method implementation.
     }
-    /// <summary>
-    /// Used for collection
-    /// </summary>
-    /// <value></value>
-    public bool isCollected {get; set;}
+
     /// <summary>
     /// Used to collect something
     /// </summary>
