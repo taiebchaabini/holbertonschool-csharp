@@ -3,7 +3,7 @@
 /// <summary>
 /// Base class
 /// </summary>
-abstract class Base{
+abstract class Base:  IInteractive, IBreakable, ICollectable{
     /// <summary>
     /// Name property
     /// </summary>
@@ -13,6 +13,35 @@ abstract class Base{
     /// </summary>
     public override string ToString(){
         return $"{name} is a {this.GetType()}";
+    }
+
+       /// <summary>
+    /// Used for interaction
+    /// </summary>
+    public void Interact(){
+        
+    }
+    /// <summary>
+    /// Used for item durability
+    /// </summary>
+    /// <value>Getter and setter</value>
+    public int durability { get; set; }
+    /// <summary>
+    /// Used to break item
+    /// </summary>
+    public void Break(){
+        // Method implementation.
+    }
+    /// <summary>
+    /// Used for collection
+    /// </summary>
+    /// <value></value>
+    public bool isCollected { get; set; }
+    /// <summary>
+    /// Used to collect something
+    /// </summary>
+    public void Collect(){
+        // Method implementation.
     }
 }
 
@@ -56,33 +85,6 @@ interface ICollectable{
 /// <summary>
 /// Used for test purpose
 /// </summary>
-public class TestObject : IInteractive, IBreakable, ICollectable{
-    /// <summary>
-    /// Used for interaction
-    /// </summary>
-    public void Interact(){
-        
-    }
-    /// <summary>
-    /// Used for item durability
-    /// </summary>
-    /// <value>Getter and setter</value>
-    public int durability { get; set; }
-    /// <summary>
-    /// Used to break item
-    /// </summary>
-    public void Break(){
-        // Method implementation.
-    }
-    /// <summary>
-    /// Used for collection
-    /// </summary>
-    /// <value></value>
-    public bool isCollected { get; set; }
-    /// <summary>
-    /// Used to collect something
-    /// </summary>
-    public void Collect(){
-        // Method implementation.
-    }
+class TestObject : Base{
+ 
 } 
