@@ -21,7 +21,7 @@ public abstract class Base{
 /// <summary>
 /// Interactive interface
 /// </summary>
-interface IInteractive{
+public interface IInteractive{
     /// <summary>
     /// Used for interactions.
     /// </summary>
@@ -30,7 +30,7 @@ interface IInteractive{
 /// <summary>
 /// IBreakable interface
 /// </summary>
-interface IBreakable{
+public interface IBreakable{
     /// <summary>
     /// Used for item durability.
     /// </summary>
@@ -44,7 +44,7 @@ interface IBreakable{
 /// <summary>
 /// ICollectable interface
 /// </summary>
-interface ICollectable{
+public interface ICollectable{
     /// <summary>
     /// Used to check if collected or not.
     /// </summary>
