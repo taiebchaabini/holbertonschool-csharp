@@ -58,7 +58,7 @@ interface ICollectable{
 /// <summary>
 /// Used for test purpose
 /// </summary>
-class TestObject : IInteractive, IBreakable, ICollectable{
+class TestObject : Base, IInteractive, IBreakable, ICollectable{
     /// <summary>
     /// Used for interaction
     /// </summary>
