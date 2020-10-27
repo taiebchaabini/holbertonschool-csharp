@@ -61,7 +61,7 @@ class TestObject : IInteractive, IBreakable, ICollectable{
     /// Used for interaction
     /// </summary>
     public void Interact(){
-
+        // Method implementation.
     }
     /// <summary>
     /// Used for item durability
