@@ -48,14 +48,14 @@ public class Player
     // Player's hp
     private float hp { get; set; }
     // Player's status
-    private string status;
+    private string status { get; set; }
     /// <summary>
     /// Player constructor
     /// </summary>
     /// <param name="name">Player's name</param>
     /// <param name="maxHp">Player's max hp</param>
     /// <param name="status">Player's status </param>
-    public Player(string name = "Player", float maxHp = 100f, string status = "<name> is ready to go!")
+    public Player(string name = "Player", float maxHp = 100f, string status = "Undefined")
     {  
         
         this.name = name;
@@ -176,7 +176,7 @@ public class CurrentHPArgs : EventArgs
     /// currentHp cannot be modified
     /// </summary>
     /// <value>Getter only</value>
-    public float currentHp { get; }
+    public readonly float currentHp;
     /// <summary>
     /// Takes a float newHp and sets it as currentHp‘s value
     /// </summary>
