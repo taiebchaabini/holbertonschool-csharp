@@ -181,7 +181,7 @@ public class CurrentHPArgs : EventArgs
     /// Takes a float newHp and sets it as currentHp‘s value
     /// </summary>
     /// <param name="newHp">New currentHp's value</param>
-    public CurrentHPArgs(float newHp)
+    public CurrentHPArgs(float newHp=100f)
     {
         this.currentHp = newHp;
     }
