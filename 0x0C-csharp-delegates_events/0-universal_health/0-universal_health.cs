@@ -6,11 +6,11 @@
 public class Player
 {
     // Player's name
-    private string name {get; set;};
+    private string name {get; set;}
     // Player's max hp.
-    private float maxHp;
+    private float maxHp {get; set;}
     // Player's hp
-    private float hp;
+    private float hp {get; set;}
     /// <summary>
     /// Player constructor
     /// </summary>
