@@ -85,7 +85,7 @@ public class Player
     /// <param name="damage">Amount of damage taken</param>
     public void TakeDamage(float damage)
     {
-        if (damage <= 0)
+        if (damage < 0)
         {
             Console.WriteLine($"{name} takes 0 damage!");
             return;
@@ -99,7 +99,7 @@ public class Player
     /// <param name="heal">Amount of heals recieved</param>
     public void HealDamage(float heal)
     {
-        if (heal <= 0)
+        if (heal < 0)
         {
             Console.WriteLine($"{name} heals 0 HP!");
             return;
