@@ -5,8 +5,17 @@
 /// </summary>
 public enum Modifier
 {
+    /// <summary> 
+    /// Weak default value should be 0.5 
+    /// </summary>
     Weak,
+    /// <summary> 
+    /// Base default value should be 1 
+    /// </summary>
     Base,
+    /// <summary> 
+    /// Strong default value should be 1.5 
+    /// </summary>
     Strong
 }
 /// <summary>
