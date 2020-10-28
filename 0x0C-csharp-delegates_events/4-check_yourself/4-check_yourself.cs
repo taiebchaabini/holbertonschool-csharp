@@ -48,7 +48,7 @@ public class Player
     // Player's hp
     private float hp { get; set; }
     // Player's status
-    private string status { get; set; }
+    private string status;
     /// <summary>
     /// Player constructor
     /// </summary>
@@ -181,7 +181,7 @@ public class CurrentHPArgs : EventArgs
     /// Takes a float newHp and sets it as currentHp‘s value
     /// </summary>
     /// <param name="newHp">New currentHp's value</param>
-    public CurrentHPArgs(float newHp=100f)
+    public CurrentHPArgs(float newHp)
     {
         this.currentHp = newHp;
     }
