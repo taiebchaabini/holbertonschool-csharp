@@ -3,22 +3,25 @@
 /// <summary>
 /// Player class
 /// </summary>
-public class Player{
+public class Player
+{
     // Player's name
-    private string name {get; set;}
+    private string name;
     // Player's max hp.
-    private float maxHp {get; set;}
+    private float maxHp;
     // Player's hp
-    private float hp {get; set;}
+    private float hp;
     /// <summary>
     /// Player constructor
     /// </summary>
     /// <param name="name">Player's name</param>
     /// <param name="maxHp">Player's max hp</param>
-    public Player(string name="Player", float maxHp=100f){
+    public Player(string name = "Player", float maxHp = 100f)
+    {
         this.name = name;
         this.maxHp = maxHp;
-        if (maxHp <= 0){
+        if (maxHp <= 0)
+        {
             Console.WriteLine("maxHp must be greater than 0. maxHp set to 100f by default..");
             this.maxHp = 100f;
         }
@@ -27,7 +30,8 @@ public class Player{
     /// <summary>
     /// Prints player Health.
     /// </summary>
-    public void PrintHealth(){
+    public void PrintHealth()
+    {
         Console.WriteLine($"{name} has {hp} / {maxHp} health");
     }
 }
