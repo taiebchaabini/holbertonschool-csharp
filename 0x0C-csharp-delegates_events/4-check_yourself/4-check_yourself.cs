@@ -175,7 +175,7 @@ public class CurrentHPArgs : EventArgs
     /// currentHp cannot be modified
     /// </summary>
     /// <value>Getter only</value>
-    public float currentHp { get; private set; }
+    public float currentHp { get; }
     /// <summary>
     /// Takes a float newHp and sets it as currentHp‘s value
     /// </summary>
