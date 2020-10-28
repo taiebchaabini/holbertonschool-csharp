@@ -4,11 +4,11 @@
 /// Player class
 /// </summary>
 public class Player{
-    /// Player's name
+    // Player's name
     private string name {get; set;}
-    /// Player's max hp.
+    // Player's max hp.
     private float maxHp {get; set;}
-    /// Player's hp
+    // Player's hp
     private float hp {get; set;}
     /// <summary>
     /// Player constructor
